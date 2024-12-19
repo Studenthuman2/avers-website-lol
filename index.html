@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head> <link rel="stylesheet" href="style.css"
+    <body>
+        <h1>Welcome to my lame website</h1>
+        <p>I have no clue what I'm doing</p>
+        <img
+        src="https://meltingmellow.pk/wp-content/uploads/2024/06/23341898dcd3669f8e7910a77625b88d.jpg"
+        width="200"
+        height="100"
+        />
+        <ul>
+            <li><a href="about-me.html">who am i?</a></li>
+            <li><a href="what-i-do.html">what do i do?</a></li>
+            <li><a href="nothing-page.html">the nothing page</a></li>
+        </ul>
+        <a href="i-warned-you.html" class="button">don't click this button</a>
+        <script>
+            function showButton() {
+                if (Math.random() > 0.5) {
+                const button = document.getElementById("randomButton");
+                const bodyWidth = document.body.clientWidth;
+                const bodyHeight = document.body.clientHeight;
+                const randomX = Math.random() * (bodyWidth - button.offsetWidth);
+                const randomY = Math.random() * (bodyHeight - button.offsetHeight);
+                button.style.left = `${randomX}px`;
+                button.style.top = `${randomY}px`;
+                button.style.display = "inline-block";
+                window.onload = showButton
+            }
+        }
+        </script>
+    </body>
+    </head>
+</html>
